@@ -27,7 +27,7 @@ fig = px.scatter(df2, x='Weight', y='MPG.city', title='MPG (city) vs Weight')
 fig2 = px.scatter(df2, x='Weight', y='MPG.highway', title='MPG (highway) vs Weight')
 
 app.layout = html.Div(children=[
-    html.H1(children='Hello Dash. Goodbye Dash.'),
+    html.H1(children='Hello Dash!'),
 
     html.Div(children='''
         Dash: A web application framework for your data.
@@ -46,4 +46,4 @@ app.layout = html.Div(children=[
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server()
